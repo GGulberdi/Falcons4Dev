@@ -1,0 +1,10 @@
+
+//select ID, Name, Account.Name from Contact where Account.Industry = 'Energy'
+
+SELECT ID, Name, Account.Name From Contact Where Account.Industry = 'Energy'
+
+SELECT ID, Name, Subject__c, priority__c, Salesforce_project__r.Project_Name__c,Salesforce_project__r.status__c FROM Salesforce_ticket__c
+
+Select id, Name, (select Firstname, Lastname from contacts) from Account
+
+select Id, Name, Project_Name__c,(select Name, Subject__c, Priority__c from Salesforce_tickets2__r) from salesforce_project__c

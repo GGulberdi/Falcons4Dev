@@ -1,0 +1,18 @@
+// AccConAndOppOperations.returnAccounts();
+// AccConAndOppOperations.returnParticular('Customer - Direct');
+// AccConAndOppOperations.returnParticular('Customer - Channel');
+// AccConAndOppOperations.returnParticular('Prospect');
+// AccConAndOppOperations.printOpportunities('Closed Won');
+// AccConAndOppOperations.oppWithLeadSource('Web');
+// AccConAndOppOperations.oppAmountSum();
+// AccConAndOppOperations.createAnAccount1('Week 5 project New account', 250.00, 'Prospect');
+// AccConAndOppOperations.createNnumberOpp('0015f00000I1rHAAAZ', 2);
+// AccConAndOppOperations.createAnAccount2('Week 5 project Second new Account', 5000.00, 'Other');
+// AccConAndOppOperations.createContactWithAccountName('0015f00000DQRyfAAH');
+// AccConAndOppOperations.updateTop10();
+// AccConAndOppOperations.deleteAllOpportunities();
+// AccConAndOppOperations.printOppAndAccounts();
+// AccConAndOppOperations.addContactToAccount();
+// AccConAndOppOperations.allAccountsWithContact();
+// AccConAndOppOperations.allAccountClosedWonOpp('Closed Won');
+// AccConAndOppOperations.deleteAccountsWithNoContact();

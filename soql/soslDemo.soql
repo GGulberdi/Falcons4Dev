@@ -1,0 +1,4 @@
+FIND{salesforce} in NAme fields returning lead(name,phone), account(name,phone)
+
+//sosl returns List<list<sObject>>
+List<List<sObject>> searchList = [find 'SI or SFDC' in all fields returning

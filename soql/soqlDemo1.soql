@@ -1,0 +1,42 @@
+//SELECT Id, Name , ShippingCity from Account
+
+
+//SELECT Id, Name, Project_Name_c from SalesForce_Project__c
+
+SELECT id, name, mailingcity from contact where mailingcity = 'Paris'
+
+select id, name, mailingcity from contract where Name LIKE 'A%'
+
+select id, Name from Account ORDER BY Name 
+
+select id, Name from Account ORDER BY Name DESC
+
+select Name, Industry FROM Account where Industry = 'Energy' limit 2
+
+select COUNT() FROM contact
+
+select COUNT(ID) FROM contact
+
+select COUNT(MailingCity) FROM contact
+
+select id, Name, Phone FROM Account WHERE phone !=null
+
+select id, Name, status__c from  FROM SalesForce_Project__c WHERE status__c  !='New'
+
+select ID, Name, Phone FROM Account WHERE phone !=null and AccountNumber !=null
+
+select ID, Name, Phone FROM Account WHERE (phone !=null or website !=null) and AccountNumber !=null
+
+
+//GROUPING
+select LeadSource, count(name) from lead group by LeadSource
+
+//AGREEGATE FUNCTIONS --- ACG(), COUNT(), MIN(), MAX(), SUM()
+//GROUP BY === HAVING
+SELECT NAME, COUNT(ID) FROM ACCOUNT GROUP BY NAME HAVING COUNT(ID)>1
+
+SELECT PHONE , COUNT(id) FROM ACCOUNT GROUP BY PHONE HAVING COUNT(ID)>1
+
+select sum(amount), stageName from opportunity where isclosed = false group by stageName having sum(amount)>20000
+
+

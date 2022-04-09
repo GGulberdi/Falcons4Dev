@@ -1,0 +1,16 @@
+//1
+SELECT Name, AccountNumber, Id from Account;
+SELECT Id, FirstName, LastName, Email from Contact;
+SELECT Name, AccountNumber, Id from Account ORDER by Name;
+SELECT Name, AccountNumber, Id from Account WHERE phone=null;
+SELECT Id, FirstName, LastName, Email from Contact WHERE AccountiD=null;
+select count() from Opportunity;
+
+
+
+
+SELECT Id, Name, StageName, amount from Opportunity WHERE StageName='Closed Won' && amount=>35000.00
+SELECT FirstName, LastName from Contact ORDER by LastName desc
+SELECT Id, Name, StageName, amount from Opportunity WHERE amount<35000.00
+SELECT Id, Name, StageName, amount from Opportunity ORDER by amount desc limit = 10
+SELECT Id, Name, StageName, amount from Opportunity where stageName !='Closed Won' and stageName !='Closed Lost'  Order by amount LIMIT 20
